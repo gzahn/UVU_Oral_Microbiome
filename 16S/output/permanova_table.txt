@@ -1,0 +1,21 @@
+[1] Permanova test on core taxa/samples:
+
+Call:
+adonis(formula = otu_table(ps_core_samples) ~ ps_core_samples@sam_data$Diet +      ps_core_samples@sam_data$WeeklyAlcohol + ps_core_samples@sam_data$ActivityLevel +      ps_core_samples@sam_data$Age + ps_core_samples@sam_data$Gender +      ps_core_samples@sam_data$Ethnicity) 
+
+Permutation: free
+Number of permutations: 999
+
+Terms added sequentially (first to last)
+
+                                        Df SumsOfSqs MeanSqs F.Model      R2 Pr(>F)  
+ps_core_samples@sam_data$Diet            1     0.634 0.63437 1.49692 0.01341  0.077 .
+ps_core_samples@sam_data$WeeklyAlcohol   1     0.448 0.44766 1.05636 0.00946  0.321  
+ps_core_samples@sam_data$ActivityLevel   3     1.086 0.36197 0.85414 0.02295  0.795  
+ps_core_samples@sam_data$Age             1     0.303 0.30314 0.71531 0.00641  0.864  
+ps_core_samples@sam_data$Gender          1     0.381 0.38054 0.89797 0.00804  0.593  
+ps_core_samples@sam_data$Ethnicity       5     2.092 0.41835 0.98718 0.04420  0.482  
+Residuals                              100    42.378 0.42378         0.89554         
+Total                                  112    47.321                 1.00000         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
